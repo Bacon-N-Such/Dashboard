@@ -1,0 +1,24 @@
+doctype 
+html(lang="en")
+    head
+        include ../includes/header.pug 
+
+        link(type='text/html', rel='stylesheet', href='../css/commands.css')
+        style.
+            body {
+            background: #3582B9
+            }
+            hr {
+                background: #0E59AF;
+            }
+            a.btn.btn-outline {
+            background: #C51BE1
+            }
+    body
+        include ../includes/navbar.pug
+        .jumbotron.text-center.bg-transparent.text-light
+            h1.display-4 401
+            p.lead Unauthorized.
+            a.btn.btn-outline.text-light(href='/') Home
+
+

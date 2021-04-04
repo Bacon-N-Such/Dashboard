@@ -1,0 +1,14 @@
+#search {
+    max-width: 600px;
+}
+#search + button {
+    height: 64px;
+}
+
+li {
+    cursor: pointer;
+}
+
+i.fad.fa-search {
+    height: 64px;
+}

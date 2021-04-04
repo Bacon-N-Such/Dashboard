@@ -1,0 +1,54 @@
+style.
+    a.btn.btn-outline-1 {
+    background: #ffffff
+  }
+  a.btn.btn-outline-2 {
+    background: #C51BE1
+  }
+  dropdown-toggle.btn.btn-pink.text-light {
+    background: #C51BE1
+  }
+nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+  a.navbar-brand(href='/')
+    img.user-avatar.round.pl-2(src=`https://cdn.discordapp.com/avatars/764185988972675092/7b913fb0a540ae101630dd7a63cfb97c.webp?size=32`)
+    span.pl-1 Bacon-N-Such
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbar.collapse.navbar-collapse
+    .navbar-nav
+      a.nav-link(href='/commands')
+        i.fas.fa-terminal.pl-2
+        span.pl-1 Commands
+      a.nav-link(href='/discord') 
+        i.fab.fa-discord.pl-2
+        span.pl-1 Join The Discord
+      a.nav-link(href='/status')
+        i.fas.fa-heartbeat.pl-2 
+        span.pl-1 Status
+      a.nav-link(href='/docs') 
+        i.fas.fa-book.pl-2
+        span.pl-1 Docs
+      a.nav-link(href='/invite')
+        i.fas.fa-plus.pl-2
+        span.pl-1 Invite
+      a.nav-link(href='/premium')
+        i.fab.fa-patreon.pl-2 
+        span.pl-1 Premium
+
+
+    .navbar-nav.ml-auto
+      if user 
+        .dropdown
+          dropdown-toggle.btn.btn-pink.text-light(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.user-avatar.round(src=`https://cdn.discordapp.com/avatars/` + user.id + `/` + user.avatarHash + `.webp?size=32`)
+            span.pl-2 #{user.username}##{user.discriminator}
+          .dropdown-menu
+            a.dropdown-item(href='/dashboard') Manage Servers
+            hr.light
+            a.dropdown-item(href='/logout') Logout
+      else 
+        a.btn.btn-outline-1(href='/login')
+          i.fas.fa-sign-in-alt.pl-2 
+          span.pl-1 Login
+      
+        

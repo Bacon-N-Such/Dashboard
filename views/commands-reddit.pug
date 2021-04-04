@@ -1,0 +1,66 @@
+
+
+doctype
+html(lang="en")
+    head
+        include includes/header.pug
+        link(type='text/html', rel='stylesheet', href='../css/commands.css')
+
+        style.
+            a.btn.btn-lg.btn-block.text-light.bg-pink.pl-2 {
+                background: #C51BE1
+            }
+            li.list-group-item.text-light {
+                background: #C51BE1
+            }
+            body {
+                background: #3582B9
+            }
+    body
+        include includes/navbar.pug
+        .jumbotron.text-left.bg-transparent 
+            h1.display Commands
+            p.lead Lists Bacon-N-Such's commands.
+            hr
+
+            section#commands
+                .container 
+                    .d-flex.justify-content-center 
+                        
+                            
+                        
+                    .row 
+                        .col-sm-3.categories
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands')
+                                span.pl-1 All
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/administrator')
+                                span.pl-1 Administrator
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/animal')
+                                span.pl-1 Animal
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/economy')
+                                span.pl-1 Economy
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/fun')
+                                span.pl-1 Fun
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/giveaway')
+                                span.pl-1 Giveaway
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/info')
+                                span.pl-1 Info
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/misc')
+                                span.pl-1 Misc
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/moderation')
+                                span.pl-1 Moderation
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/music')
+                                span.pl-1 Music
+                            a.btn.btn-lg.btn-block.text-light.bg-pink.pl-2(href='/commands/reddit')
+                                span.pl-1 Reddit
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/tickets')
+                                span.pl-1 Tickets
+                            a.btn.btn-lg.btn-block.text-light.bg-dark.pl-2(href='/commands/utility')
+                                span.pl-1 Utility
+                        .col-sm-7
+                            ul.list-group.mb-4
+                                ul.list-group.list-group-horizontal-xl-2
+                                    li.list-group-item.text-light Command: 
+                                    li.list-group-item.text-light Description: 
+                                    li.list-group-item.text-light Usage: 
+                                    li.list-group-item.text-light Category:
