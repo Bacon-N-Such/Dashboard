@@ -42,6 +42,12 @@ app.get('/commands/administrator', (req, res) => res.render('commands-administra
 app.get('/commands/animal', (req, res) => res.render('commands-animal', {
     subtitle: 'Animal'
     }));
+app.get('/commands/automod', (req, res) => res.render('commands-automod', {
+    subtitle: 'AutoMod'
+    }));
+app.get('/commands/config', (req, res) => res.render('commands-config', {
+    subtitle: 'Config'
+    }));
 app.get('/commands/economy', (req, res) => res.render('commands-economy', {
     subtitle: 'Economy'
     }));
@@ -50,6 +56,9 @@ app.get('/commands/fun', (req, res) => res.render('commands-fun', {
     }));
 app.get('/commands/giveaway', (req, res) => res.render('commands-giveaway', {
     subtitle: 'Giveaway'
+    }));
+app.get('/commands/image', (req, res) => res.render('commands-image', {
+    subtitle: 'Image'
     }));
 app.get('/commands/info', (req, res) => res.render('commands-info', {
     subtitle: 'Info'

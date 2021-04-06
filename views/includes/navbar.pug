@@ -40,7 +40,7 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-dark
       if user 
         .dropdown
           dropdown-toggle.btn.btn-pink.text-light(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-            img.user-avatar.round(src=`https://cdn.discordapp.com/avatars/` + user.id + `/` + user.avatarHash + `.webp?size=32`)
+            img.user-avatar.round(src=`https://cdn.discordapp.com/avatars/` + user.id + `/` + user.avatarHash + `?size=32`)
             span.pl-2 #{user.username}##{user.discriminator}
           .dropdown-menu
             a.dropdown-item(href='/dashboard') Manage Servers
