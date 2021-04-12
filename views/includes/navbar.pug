@@ -8,32 +8,39 @@ style.
   dropdown-toggle.btn.btn-pink.text-light {
     background: #C51BE1
   }
-nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+  a.nav-link:hover {
+  background-color: #C51BE1;
+  border-radius: 15px;
+  color: #ffffff
+  }
+  nav.navbar.navbar-expand-md.navbar-dark.bg-dark-max.dark {
+    background-color: #000000;
+  }
+nav.navbar.navbar-expand-md.navbar-dark.bg-dark-max.dark
   a.navbar-brand(href='/')
-    img.user-avatar.round.pl-2(src=`https://cdn.discordapp.com/avatars/764185988972675092/7b913fb0a540ae101630dd7a63cfb97c.webp?size=32`)
-    span.pl-1 Bacon-N-Such
+    img.user-avatar.pl-2(src=`https://cdn.discordapp.com/avatars/764185988972675092/1dc5139166973530dcc280b05ef2a5a3.png?size=32`)
   button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbar.collapse.navbar-collapse
     .navbar-nav
       a.nav-link(href='/commands')
         i.fas.fa-terminal.pl-2
-        span.pl-1 Commands
-      a.nav-link(href='/discord') 
+        span.pl-2 Commands
+      a.nav-link(href='/discord', target='_blank')
         i.fab.fa-discord.pl-2
-        span.pl-1 Join The Discord
+        span.pl-2 Join The Discord
       a.nav-link(href='/status')
         i.fas.fa-heartbeat.pl-2 
-        span.pl-1 Status
+        span.pl-2 Status
       a.nav-link(href='/docs') 
         i.fas.fa-book.pl-2
-        span.pl-1 Docs
-      a.nav-link(href='/invite')
+        span.pl-2 Docs
+      a.nav-link(href='/invite', target='_blank')
         i.fas.fa-plus.pl-2
-        span.pl-1 Invite
+        span.pl-2 Invite
       a.nav-link(href='/premium')
         i.fab.fa-patreon.pl-2 
-        span.pl-1 Premium
+        span.pl-2 Premium
 
 
     .navbar-nav.ml-auto
@@ -43,8 +50,6 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-dark
             img.user-avatar.round(src=`https://cdn.discordapp.com/avatars/` + user.id + `/` + user.avatarHash + `?size=32`)
             span.pl-2 #{user.username}##{user.discriminator}
           .dropdown-menu
-            a.dropdown-item(href='/dashboard') Manage Servers
-            hr.light
             a.dropdown-item(href='/logout') Logout
       else 
         a.btn.btn-outline-1(href='/login')

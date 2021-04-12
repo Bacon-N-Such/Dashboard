@@ -1,0 +1,42 @@
+
+
+doctype
+html(lang="en")
+    head
+        include includes/header.pug
+        link(type='text/html', rel='stylesheet', href='../css/commands.css')
+
+        style.
+            a.btn.btn-danksecond.btn-lg.btn-block.pl-2 {
+                background: #1c1c1c
+            }
+            li.list-group-item.text-light {
+                background: #C51BE1
+            }
+            .round {
+                border-radius: 50%;
+            }
+            .icon, .icon img {
+                font-size: x-large;
+
+                height: 52px;
+                width: 52px;
+            }
+            body {
+                background: #2d7bd3
+            }
+    body
+        include includes/navbar.pug
+        .container
+            .jumbotron.text-center.bg-transparent 
+                img.round(src=`https://cdn.discordapp.com/avatars/155149108183695360/19a5ee4114b47195fcecc6646f2380b1.png?size=64`)
+                h1.display Dyno
+                p.lead Lists Dyno's Links.
+                hr
+                .d-flex.justify-content-center 
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dyno/invite')
+                    span.pl-1 Invite
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dyno/website')
+                    span.pl-1 Website
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dyno/support')
+                    span.pl-1 Support Server

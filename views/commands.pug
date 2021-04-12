@@ -5,6 +5,7 @@ html(lang="en")
     head
         include includes/header.pug
         link(type='text/html', rel='stylesheet', href='../css/commands.css')
+        link(type='text/html', rel='stylesheet', href='../css/footer.css')
         link(type='image/png', rel='shortcut icon', href='../img/favicon.png')
 
         style.
@@ -15,7 +16,7 @@ html(lang="en")
                 background: #C51BE1
             }
             body {
-                background: #3582B9
+                background: #2d7bd3
             }
     body
         include includes/navbar.pug
@@ -63,15 +64,16 @@ html(lang="en")
                                 span.pl-1 Utility
                         .col-sm-7
                             ul.list-group.mb-4
-                                ul.list-group.list-group-horizontal-xl-2
-                                    li.list-group-item.text-light Command: Dashboard
-                                    li.list-group-item.text-light Description: Sends a link to configure my settings.
-                                    li.list-group-item.text-light Usage: b?dashboard
-                                    li.list-group-item.text-light Category:
+                            ul.list-group.list-group-horizontal-xl-2
+                                li.list-group-item.text-light Command: Dashboard
+                                li.list-group-item.text-light Description: Sends a link to configure my settings.
+                                li.list-group-item.text-light Usage: b?dashboard
+                                li.list-group-item.text-light Category:
                             hr.bg-white
                             ul.list-group.mb-4
-                                ul.list-group.list-group-horizontal-xl-2
-                                        li.list-group-item.text-light Command: Prefix
-                                        li.list-group-item.text-light Description: Changes the bots prefix to what you specify.
-                                        li.list-group-item.text-light Usage: b?prefix (prefix)
-                                        li.list-group-item.text-light Category:
+                            ul.list-group.list-group-horizontal-xl-2
+                                li.list-group-item.text-light Command: Prefix
+                                li.list-group-item.text-light Description: Changes the bots prefix to what you specify.
+                                li.list-group-item.text-light Usage: b?prefix (prefix)
+                                li.list-group-item.text-light Category:
+        include includes/footer.pug

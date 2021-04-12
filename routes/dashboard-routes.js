@@ -1,7 +1,7 @@
 const express = require(`express`)
 const router = express.Router()
 
-router.get('/', (req, res) => res.render('../dashboard/index.pug'));
 
+router.get('/servers/:id', (req, res) => res.render('../dashboard/show.pug'))
 
 module.exports = router;

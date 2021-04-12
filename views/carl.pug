@@ -1,0 +1,42 @@
+
+
+doctype
+html(lang="en")
+    head
+        include includes/header.pug
+        link(type='text/html', rel='stylesheet', href='../css/commands.css')
+
+        style.
+            a.btn.btn-danksecond.btn-lg.btn-block.pl-2 {
+                background: #bdcf47
+            }
+            li.list-group-item.text-light {
+                background: #C51BE1
+            }
+            .round {
+                border-radius: 50%;
+            }
+            .icon, .icon img {
+                font-size: x-large;
+
+                height: 52px;
+                width: 52px;
+            }
+            body {
+                background: #2f2f2f
+            }
+    body
+        include includes/navbar.pug
+        .container
+            .jumbotron.text-center.bg-transparent 
+                img.round(src=`https://cdn.discordapp.com/avatars/235148962103951360/cececd50fdc87b29929e65c768f24ad6.png?size=64`)
+                h1.display.text-light Carl
+                p.lead.text-light Lists Carl's Links.
+                hr
+                .d-flex.justify-content-center 
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dyno/invite')
+                    span.pl-1 Invite
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dyno/website')
+                    span.pl-1 Website
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dyno/support')
+                    span.pl-1 Support Server

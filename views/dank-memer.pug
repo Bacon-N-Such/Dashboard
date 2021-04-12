@@ -1,0 +1,44 @@
+
+
+doctype
+html(lang="en")
+    head
+        include includes/header.pug
+        link(type='text/html', rel='stylesheet', href='../css/commands.css')
+
+        style.
+            a.btn.btn-danksecond.btn-lg.btn-block.pl-2 {
+                background: #39923c
+            }
+            li.list-group-item.text-light {
+                background: #C51BE1
+            }
+            .round {
+                border-radius: 50%;
+            }
+            .icon, .icon img {
+                font-size: x-large;
+
+                height: 52px;
+                width: 52px;
+            }
+            body {
+                background: #0d0c0c
+            }
+    body
+        include includes/navbar.pug
+        .container
+            .jumbotron.text-center.bg-transparent 
+                img.round(src=`https://cdn.discordapp.com/avatars/270904126974590976/d60c6bd5971f06776ba96497117f7f58.png?size=128`)
+                h1.display.text-light Dank Memer
+                p.lead.text-light Lists Dank Memer's Links.
+                hr
+                .d-flex.justify-content-center 
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dankmemer/invite')
+                    span.pl-1 Invite
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dankmemer/website')
+                    span.pl-1 Website
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dankmemer/community')
+                    span.pl-1 Community Server
+                a.btn.btn-danksecond.btn-lg.btn-block.text-light.pl-2(href='/dankmemer/support')
+                    span.pl-1 Support Server

@@ -13,7 +13,7 @@ html(lang="en")
                 background: #C51BE1
             }
             body {
-                background: #3582B9
+                background: #2d7bd3
             }
     body
         include includes/navbar.pug
@@ -64,12 +64,38 @@ html(lang="en")
                                 span.pl-1 Utility
                         .col-sm-7
                             ul.list-group.mb-4
-                                ul.list-group.list-group-horizontal-xl-2
-                                    li.list-group-item.text-light Command: Dashboard
-                                    li.list-group-item.text-light Description: Sends a link to configure my settings.
-                                    li.list-group-item.text-light Usage: b?dashboard
+                            ul.list-group.list-group-horizontal-xl-2
+                                li.list-group-item.text-light Command: Dashboard
+                                li.list-group-item.text-light Description: Sends a link to configure my settings.
+                                li.list-group-item.text-light Usage: b?dashboard
                             ul.list-group.mb-4
-                                ul.list-group.list-group-horizontal-xl-2
-                                        li.list-group-item.text-light Command: Prefix
-                                        li.list-group-item.text-light Description: Changes the bots prefix to what you specify.
-                                        li.list-group-item.text-light Usage: b?prefix (prefix)
+                            ul.list-group.list-group-horizontal-xl-2
+                                li.list-group-item.text-light Command: Embed
+                                li.list-group-item.text-light Description: Sends a custom message embed in the chat.
+                                li.list-group-item.text-light Usage: b?embed (#channel) [#color] [text]
+                            ul.list-group.mb-4
+                            ul.list-group.list-group-horizontal-xl-2
+                                li.list-group-item.text-light Command: Leave Channel
+                                li.list-group-item.text-light Description: Sets/Updates the guilds leave channel.
+                                li.list-group-item.text-light Usage: b?leavechannel [channel]
+                            ul.list-group.mb-4
+                            ul.list-group.list-group-horizontal-xl-2
+                                li.list-group-item.text-light Command: Mod Log
+                                li.list-group-item.text-light Description: Sets/Updates the mod log channel.
+                                li.list-group-item.text-light Usage: b?modlog [channel]
+                            ul.list-group.mb-4
+                            ul.list-group.list-group-horizontal-xl-2
+                                li.list-group-item.text-light Command: Nuke
+                                li.list-group-item.text-light Description: Nukes the channel, which deletes all the messages in the chat.
+                                li.list-group-item.text-light Usage: b?nuke 
+                                li.list-group-item.text-light NOTE: This will reset the channel, if it is something important, for example, the channel you want to nuke is set as the welcome channel. It will reset.
+                            ul.list-group.mb-4
+                            ul.list-group.list-group-horizontal-xl-2
+                                li.list-group-item.text-light Command: Prefix
+                                li.list-group-item.text-light Description: Changes the bots prefix to what you specify.
+                                li.list-group-item.text-light Usage: b?prefix (prefix)
+                            ul.list-group.mb-4
+                            ul.list-group.list-group-horizontal-xl-2
+                                li.list-group-item.text-light Command: Welcome Channel
+                                li.list-group-item.text-light Description: Sets/Updates the guilds welcome channel.
+                                li.list-group-item.text-light Usage: b?welcomechannel (channel)

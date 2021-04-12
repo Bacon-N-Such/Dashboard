@@ -1,4 +1,28 @@
+style. 
+    .float-left.bg-pink {
+        background: #C51BE1
+    }
+    #sidebar {
+        height: 100vh;
+        padding: 10px;
+    }
 #sidebar.float-left.bg-pink
     a(href='/dashboard')
         .icon-round.shadow
-            img(alt=user.username, src=`https://cdn.discordapp.com/avatars/` + user.id + `/` + user.avatarHash + `?size=64`)
+            img.round(alt=user.username, src=`https://cdn.discordapp.com/avatars/` + user.id + `/` + user.avatarHash + `?size=64`)
+    hr
+    each guild in guilds 
+        a(href='/servers/' + guild.id)
+            .icon.round
+                img.round(alt=guild.name, src=guild.iconUrl(64))
+
+
+
+    
+    a(href='/invite')
+        .icon.round
+            p.abbr.text-success.text-center #[i.fas.fa-plus]
+
+
+
+    
